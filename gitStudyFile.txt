@@ -1,0 +1,16 @@
+git status的精简命令
+git status -s / git status --short 命令
+ M README
+MM Rakefile
+A  lib/git.rb
+M  lib/simplegit.rb
+?? LICENSE.txt
+新添加的未跟踪的文件前面有？？标记
+新添加到暂存区中的文件前面有A标记
+修改过的文件前面有M标记
+
+输出中有两栏 左栏展示了暂存区的状态 右栏指示工作区的状态
+解释： M 代表在工作区已修改但尚未暂存
+      MM 表示已修改，暂存后又做了修改，因此该文件的修改中既有已暂存的文件也有未暂存的文件。
+      M  代表文件已修改且已暂存
+      
